@@ -4,7 +4,7 @@
 \alias{detect_char}
 \title{Detect a vector that might be of class character}
 \usage{
-detect_char(x, convert = F)
+detect_char(x, convert = FALSE)
 }
 \arguments{
 \item{x}{a vector}
@@ -23,7 +23,7 @@ Detect a vector that might be of class character
 x <- as.factor(c("This", "is", "actually", "a", "sentence"))
 class(x)
 detect_char(x)
-xnew <- detect_char(x, convert = T)
+xnew <- detect_char(x, convert = TRUE)
 class(xnew)
 }
 

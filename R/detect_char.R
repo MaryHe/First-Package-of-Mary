@@ -11,9 +11,9 @@
 #' x <- as.factor(c("This", "is", "actually", "a", "sentence"))
 #' class(x)
 #' detect_char(x)
-#' xnew <- detect_char(x, convert = T)
+#' xnew <- detect_char(x, convert = TRUE)
 #' class(xnew)
-detect_char <- function(x, convert = F){
+detect_char <- function(x, convert = FALSE){
   assertthat::assert_that(is.atomic(x))
   assertthat::assert_that(!is.matrix(x))
   assertthat::assert_that(!is.null(x))
@@ -23,7 +23,7 @@ detect_char <- function(x, convert = F){
   else if(is.character(x)) print("This is already a character vector")
 
   else if(dplyr::n_distinct(x) == length(x)){
-    if(convert == T){
+    if(convert == TRUE){
       return(as.character(x))
     }
     else{

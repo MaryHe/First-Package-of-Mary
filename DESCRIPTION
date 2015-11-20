@@ -1,8 +1,10 @@
 Package: MaryFactors
-Title: What the Package Does (one line, title case)
+Title: All about Factors
 Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.2.2)
-License: What license is it under?
+Authors@R: person("Mary", "He", email = "mary.he@stat.ubc.ca", role = c("aut", "cre"))
+Description: Factors in R can be annoying. This package contains several functions that deal with factors. For example, combining two factors, detecting factors that should be character and seting levels to the order in which they appear in the data rather than alphabetically.
+Depends:
+    R (>= 3.2.2)
+License: MIT + file LICENSE
 LazyData: true
+RoxygenNote: 5.0.0

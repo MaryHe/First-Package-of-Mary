@@ -1,4 +1,4 @@
-#' Detect a vector that could be of class character
+#' Detect a vector that might be of class character
 #'
 #' @param x a vector
 #' @param convert a logical value indicating whether to convert the vector into character if it is

@@ -10,11 +10,11 @@ detect_char(x, convert = FALSE)
 \item{x}{a vector}
 
 \item{convert}{a logical value indicating whether to convert the vector into character if it is
-suspected by the function to be of class character. Default is F}
+suspected by the function to be of class character. Default is FALSE}
 }
 \value{
-If convert is T, return converted vector of class character. Otherwise, return nothing but
-        print corresponding messages
+If convert is TRUE, return converted vector of class character. Otherwise, return
+        nothing but print corresponding messages
 }
 \description{
 Detect a vector that might be of class character

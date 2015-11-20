@@ -9,3 +9,11 @@ test_that("fbind binds factor (or character)", {
   expect_identical(fbind(x, y), z)
   expect_identical(fbind(x_fact, y), z)
 })
+
+test_that("cannot handle weird input", {
+  x <- c('a', 'b')
+  y <- data.frame(a = c(1, 2), b = c(3, 4))
+
+  expect_error(fbind(x, y))
+})
+

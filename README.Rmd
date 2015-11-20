@@ -1,0 +1,24 @@
+---
+title: "Homework08"
+author: "Mary He (84565150)"
+date: Nov20, 2015
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+This is a package built for STAT545 homework08. It contains several functions mainly used to deal with factors. Here is an example of one of the function `fbind`
+```{r}
+library(MaryFactors)
+fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
+```
